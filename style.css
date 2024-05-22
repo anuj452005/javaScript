@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+  
+}
+.container{
+    
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.header{
+    position: static;
+    width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+    font-size: 5rem;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.choices{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    /* top property only work when non static property is defined  */
+    top: 10vh;
+}
+.choices:hover{
+    cursor: pointer;
+    background-color: #081b31;
+    
+}
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .choice{
+    display: flex;
+    justify-content: center;
+   gap: 100px;
+
+}
+.scoreCard{
+    position: relative;
+    top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+  
+}
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+.msg-container {
+    margin-top: 20rem;
+    display: flex; 
+    justify-content: center; 
+}
+
+#msg {
+    display: inline; 
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    text-align: center; 
+}
+
+  
